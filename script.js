@@ -19,6 +19,7 @@ tracker.on('track', event => {
 })
 
 download.addEventListener('click', () => {
+  console.log(this, 'hello world')
   this.href = canvas.toDataURL()
   this.download = 'test.png'
 })

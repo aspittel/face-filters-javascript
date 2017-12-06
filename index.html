@@ -9,17 +9,21 @@
 
     <script src="./tracking/tracking-min.js"></script>
     <script src="./tracking/data/face-min.js"></script>
-  
   </head>
 <body>  
-  <div class="demo-frame">
-    <div class="demo-container">
-      <video id="video" width="320" height="240" preload autoplay loop muted></video>
-      <canvas id="canvas" width="320" height="240"></canvas>
+  <div class="container">
+    <div class="header">
+      <h1>🌷🌼🌸 Filter Me 🌸🌼🌷</h1>
     </div>
+    <div class="buttons">
+      <button id="flower-crown">flower crown 💐</button>
+      <button id="bunny-ears">bunny ears 🐰</button>       
+    </div>        
+    <div class="webcam">
+      <video id="video" width="500" height="375" preload autoplay loop muted></video>
+      <canvas id="canvas" width="500" height="375"></canvas>     
+    </div>  
   </div>
-  
-  <a id="download">download image</a>
   <script src="script.js"></script>    
 </body>
 </html>

@@ -3,6 +3,7 @@ const context = canvas.getContext('2d')
 const tracker = new tracking.ObjectTracker('face')
 const flowerCrownButton = document.getElementById('flower-crown')
 const bunnyEarsButton = document.getElementById('bunny-ears')
+const dogFaceButton = document.getElementById('dog-face')
 
 const img = new Image()
 let filterX = 0
@@ -29,6 +30,10 @@ flowerCrownButton.addEventListener('click', flowerCrown)
 bunnyEarsButton.addEventListener('click', () => {
   changePic(-0.5, -0.9, 2, 2, 'bunny-ears.png')
 })
+
+dogFaceButton.addEventListener('click', () => {
+  changePic(-0.6, -0.6, 2, 2.5, 'dog-face.png')
+});
 
 tracker.setInitialScale(4)
 tracker.setStepSize(2)
